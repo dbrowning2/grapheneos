@@ -1,8 +1,13 @@
 # GrapheneOS root
 
-## Warning
+> [!IMPORTANT]  
+> Pay special attention to the pixincreate/Magisk section.  If you use stock Magisk you will soft brick your phone although it is easily recoverable it does require you to wipe your phone.
 
-MacOS loses the ability to talk to the phone in both adb and fastboot randomly when going between the OS and fastboot.  The ONLY fix I've found is to reboot the Mac.
+> [!WARNING]  
+> MacOS loses the ability to talk to the phone in both adb and fastboot randomly when going between the OS and fastboot.  The ONLY fix I've found is to reboot the Mac.  This has been reproduced on different generation M series Macbooks.
+
+> [!CAUTION]
+> All OS updates will remove root.  You will have to run through this after every OS upgrade.  You can not do a direct in place root via Magisk after an update and before a reboot.  It won't hurt anything but it also won't work.
 
 ## Assumptions
 
@@ -13,7 +18,7 @@ This doc makes the following assumptions:
   - You have an unlocked bootloader
   - You are not rooted
 
-##  Obtaining pixincreate/Magisk
+## Obtaining pixincreate/Magisk
 
 Magisk refuses to accept patches to work with GrapheneOS as they are actively blocing root so you need to get a patched version that can.  If you have any other version of Magisk installed you must uninstall it.
 
@@ -44,7 +49,3 @@ Make sure you are running the pixincreate/Magisk version of Magisk.
 This will download the Magisk patched image and flash it.
 
 https://github.com/dbrowning2/grapheneos/blob/main/scripts/download_flash.sh
-
-## OS Updates
-
-All OS updates will remove root.  You will have to run through this after every OS upgrade.  You can not do a direct in place root via Magisk after an update and before a reboot.  It won't hurt anything but it also won't work.
