@@ -4,7 +4,7 @@
 > microG probably should not be used.  They have a proper store and services built into GrapheneOS.
 
 > [!WARNING]  
-> Installing Zygisk to hide root is not reccomended on GrapheneOS.  It can and does break and then it takes a while to get fixed since the maintainers do not like GrapheneOS.
+> Installing Zygisk to hide root is not reccomended on GrapheneOS.  It can and does break and then it takes a while to get fixed since the maintainers do not like GrapheneOS.  I also tried it and it didn't work.
 
 ## Installing Google Play
 
