@@ -1,2 +1,2 @@
-# grapheneos
+# GrapheneOS
 GrapheneOS
