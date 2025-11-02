@@ -22,6 +22,12 @@ This doc makes the following assumptions:
 
 Magisk refuses to accept patches to work with GrapheneOS as they are actively blocing root so you need to get a patched version that can.  If you have any other version of Magisk installed you must uninstall it.
 
+> [!NOTE]  
+> This is advertised as getting [Zygisk](https://zygisk.com/) working on GrapheneOS which allows more apps to work.  I would be cautious as this is more fragile and I tried it with Airalo and it did not work.
+
+> [!NOTE]  
+> If you need shell root you need to enable that in the settings of Magisk.  I don't recommend leaving that enabled.
+
 https://github.com/pixincreate/Magisk/releases
 
 Download to your computer and install:
