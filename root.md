@@ -4,7 +4,7 @@
 > Do not enable the Zygisk in Magisk, it is not compatible with GrapheneOS.  There are forks you can use at your own risk https://github.com/pixincreate/Magisk/releases.
 
 > [!WARNING]  
-> MacOS loses the ability to talk to the phone in both adb and fastboot randomly when going between the OS and fastboot.  The ONLY fix I've found is to reboot the Mac.  This has been reproduced on different generation M series Macbooks.
+> MacOS loses the ability to talk to the phone in both adb and fastboot randomly when going between the OS and fastboot.  The ONLY fix I've found is to reboot the Mac.  This has been observed on different generation M series Macbooks.
 
 > [!CAUTION]
 > All OS updates will remove root.  You will have to run through this after every OS upgrade.  You can not do a direct in place root via Magisk after an update and before a reboot.  It won't hurt anything but it also won't work.
