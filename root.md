@@ -49,3 +49,9 @@ Make sure you are running the pixincreate/Magisk version of Magisk.
 This will download the Magisk patched image and flash it.
 
 https://github.com/dbrowning2/grapheneos/blob/main/scripts/download_flash.sh
+
+## Disable System Updates
+
+First make sure automatic reboots are off in Settings -> System -> System Updates -> Automatic reboot.
+
+To disable system updates entirely go to Settings -> Apps -> See All xx Apps.  In the upper right tap the three dots and select show system.  Find `System Updater`, select it, and disable it.
