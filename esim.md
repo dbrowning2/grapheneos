@@ -8,4 +8,8 @@
 
 ## Saily
 
-I have successfully tested an actual eSIM with Saily.  It threw an error at install time but that may have been due to eSIM support not being enabled at install but it worked.  You must install it through the Aurora app store which can be installed via F-Droid.
+I have successfully tested an actual eSIM with Saily.  It threw an error at install time but that may have been due to eSIM support not being enabled at install but it worked.
+
+You must install it through the Aurora app store which can be installed via F-Droid.
+
+I can't say whether Saily is a good eSIM provider or not.  It just worked.
