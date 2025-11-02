@@ -1,7 +1,7 @@
 # GrapheneOS root
 
 > [!IMPORTANT]  
-> Pay special attention to the pixincreate/Magisk section.  If you use stock Magisk you will soft brick your phone although it is easily recoverable it does require you to wipe your phone.
+> Do not enable the Zygisk in Magisk, it is not compatible with GrapheneOS.  There are forks you can use at your own risk https://github.com/pixincreate/Magisk/releases.
 
 > [!WARNING]  
 > MacOS loses the ability to talk to the phone in both adb and fastboot randomly when going between the OS and fastboot.  The ONLY fix I've found is to reboot the Mac.  This has been reproduced on different generation M series Macbooks.
@@ -20,19 +20,12 @@ This doc makes the following assumptions:
 
 ## Obtaining pixincreate/Magisk
 
-Magisk refuses to accept patches to work with GrapheneOS as they are actively blocing root so you need to get a patched version that can.  If you have any other version of Magisk installed you must uninstall it.
+Magisk refuses to accept patches to get Zygisk to work work with GrapheneOS as they are actively blocing root
 
-> [!NOTE]  
-> This is advertised as getting [Zygisk](https://zygisk.com/) working on GrapheneOS which allows more apps to work.  I would be cautious as this is more fragile and I tried it with Airalo and it did not work.
+Download and install the latest non pre-release build from https://github.com/topjohnwu/Magisk/releases.
 
-> [!NOTE]  
-> If you need shell root you need to enable that in the settings of Magisk.  I don't recommend leaving that enabled.
-
-https://github.com/pixincreate/Magisk/releases
-
-Download to your computer and install:
 ```
-adb install app-release.apk
+adb install Magisk-v29.0.apk
 ```
 
 ##  Download OTA GrapheneOS and extract init_boot.img
