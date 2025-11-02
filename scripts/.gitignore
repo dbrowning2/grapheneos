@@ -1,9 +1,5 @@
-# Ignore all log files
 *.log
-
-# Ignore all image disk files
 *.img
-
-# Ignore all zip archives
 *.zip
+*.apk
 
