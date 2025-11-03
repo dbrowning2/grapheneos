@@ -62,8 +62,10 @@ If the OS fails to boot get back into fastboot (you should be there).
 
 You will be back to your rooted OS pre OTA update.  Perform the OTA update again and reboot.  Follow steps the steps from the beginning.
 
-## Disable System Updates (optional)
+## Disable Automatic Reboots
 
-First make sure automatic reboots are off in Settings -> System -> System Updates -> Automatic reboot.
+Make sure automatic reboots are off in Settings -> System -> System Updates -> Automatic reboot.
+
+## Disable System Updates (optional and not recommended)
 
 To disable system updates entirely go to Settings -> Apps -> See All xx Apps.  In the upper right tap the three dots and select show system.  Find `System Updater`, select it, and disable it.
