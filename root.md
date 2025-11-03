@@ -7,7 +7,7 @@
 > MacOS loses the ability to talk to the phone in both adb and fastboot randomly when going between the OS and fastboot.  The ONLY fix I've found is to reboot the Mac.  This has been observed on different generation M series Macbooks.
 
 > [!CAUTION]
-> All OS updates will remove root.  You will have to run through this after every OS upgrade.  You can not do a direct in place root via Magisk after an update and before a reboot.  It won't hurt anything but it also won't work.
+> All OS updates will remove root if you do not follow the section for Maintaining root when updating/OTA GrapheneOS.
 
 ## Assumptions
 
@@ -16,11 +16,10 @@ This doc makes the following assumptions:
   - Deeloper mode and USB debugging have been enabled and adb/fastboot commands are functional
   - You are connected via USB
   - You have an unlocked bootloader
-  - You are not rooted
 
-## Obtaining pixincreate/Magisk
+## Magisk
 
-Magisk refuses to accept patches to get Zygisk to work work with GrapheneOS as they are actively blocing root
+Magisk refuses to accept patches to get Zygisk to work work with GrapheneOS as they are actively blocing root.
 
 Download and install the latest non pre-release build from https://github.com/topjohnwu/Magisk/releases.
 
@@ -30,13 +29,11 @@ adb install Magisk-v29.0.apk
 
 ##  Download OTA GrapheneOS and extract init_boot.img
 
-This will automatically download the correct OTA, extract init_boot.img, and upload it to `/sdcard/Downloads` so you can patch it with Magisk.
+This will automatically download the correct OTA, extract `init_boot.img`, and upload it to `/sdcard/Downloads` so you can patch it with Magisk.
 
 https://github.com/dbrowning2/grapheneos/blob/main/scripts/ota_boot_image.sh
 
-## pixincreate/Magisk steps
-
-Make sure you are running the pixincreate/Magisk version of Magisk.
+## Magisk steps to get initial root
 
   - In Magisk click on the `Install` button to the right of `Magisk`.
   - Choose `Select and Patch a File`.
@@ -49,7 +46,23 @@ This will download the Magisk patched image and flash it.
 
 https://github.com/dbrowning2/grapheneos/blob/main/scripts/download_flash.sh
 
-## Disable System Updates
+## Maintaining root when updating/OTA GrapheneOS (untested)
+
+After the update has been installed but you have not rebooted
+
+  - In Magisk click on the `Install` button to the right of `Magisk`.
+  - Choose `Install to inactive slot (after OTA)`.
+  - Click let's go
+
+If the OS fails to boot get back into fastboot (you should be there).
+
+  - fastboot getvar current-slot
+  - fastboot set_active (either a or b, whatever isn't the current slot)
+  - reboot
+
+You will be back to your rooted OS pre OTA update.  Perform the OTA update again and reboot.  Follow steps the steps from the beginning.
+
+## Disable System Updates (optional)
 
 First make sure automatic reboots are off in Settings -> System -> System Updates -> Automatic reboot.
 
