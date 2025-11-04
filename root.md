@@ -31,6 +31,9 @@ adb install Magisk-v29.0.apk
 This will automatically download the correct OTA, extract `init_boot.img`, and upload it to `/sdcard/Downloads` so you can patch it with Magisk.
 
 https://github.com/dbrowning2/grapheneos/blob/main/scripts/ota_boot_image.sh
+```
+adb push tegu-install-2025102801.zip /sdcard/
+```
 
 ## Magisk steps to get initial root
 
