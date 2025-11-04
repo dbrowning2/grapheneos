@@ -1,8 +1,5 @@
 # GrapheneOS root
 
-> [!IMPORTANT]  
-> Do not enable the Zygisk in Magisk, it is not compatible with GrapheneOS.  There are forks you can use at your own risk https://github.com/pixincreate/Magisk/releases.
-
 > [!WARNING]  
 > MacOS loses the ability to talk to the phone in both adb and fastboot randomly when going between the OS and fastboot.  The ONLY fix I've found is to reboot the Mac.  This has been observed on different generation M series Macbooks.
 
@@ -19,7 +16,8 @@ This doc makes the following assumptions:
 
 ## Magisk
 
-Magisk refuses to accept patches to get Zygisk to work work with GrapheneOS as they are actively blocing root.  There are forks you can use at your own risk https://github.com/pixincreate/Magisk/releases, I tried it, it says it worked but Airalo still didn't function so I don't know if there's much if any benefit.
+> [!WARNING]  
+> Magisk refuses to accept patches to get Zygisk to work work with GrapheneOS as they are actively blocing root.  There are forks you can use at your own risk https://github.com/pixincreate/Magisk/releases, I tried it, it says it worked but Airalo still didn't function so I don't know if there's much if any benefit.  Don't enable it under stock Magisk.
 
 Download and install the latest non pre-release build from https://github.com/topjohnwu/Magisk/releases.
 
