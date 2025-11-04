@@ -13,6 +13,7 @@ This doc makes the following assumptions:
   - Developer mode and USB debugging have been enabled and adb/fastboot commands are functional
   - You are connected via USB
   - You have an unlocked bootloader
+  - If there are any pending updates install them and reboot before starting this
 
 ## Magisk
 
