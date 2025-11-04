@@ -17,7 +17,7 @@ This doc makes the following assumptions:
 ## Magisk
 
 > [!WARNING]  
-> Magisk refuses to accept patches to get Zygisk to work work with GrapheneOS as they are actively blocing root.  There are forks you can use at your own risk https://github.com/pixincreate/Magisk/releases, I tried it, it says it worked but Airalo still didn't function so I don't know if there's much if any benefit.  Don't enable it under stock Magisk.
+> Magisk refuses to accept patches to get Zygisk to work work with GrapheneOS as they are actively blocking root.  There are forks you can use at your own risk https://github.com/pixincreate/Magisk/releases, I tried it, it says it worked but Airalo still didn't function so I don't know if there's much if any benefit.  Don't enable it under stock Magisk.
 
 Download and install the latest non pre-release build from https://github.com/topjohnwu/Magisk/releases.
 
