@@ -10,7 +10,7 @@
 
 This doc makes the following assumptions:
   - You are running GrapheneOS based on Android 16 on a Pixel 9a
-  - Deeloper mode and USB debugging have been enabled and adb/fastboot commands are functional
+  - Developer mode and USB debugging have been enabled and adb/fastboot commands are functional
   - You are connected via USB
   - You have an unlocked bootloader
 
