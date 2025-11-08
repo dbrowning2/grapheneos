@@ -65,6 +65,9 @@ You will be back to your rooted OS pre OTA update.  Perform the OTA update again
 
 Make sure automatic reboots are off in Settings -> System -> System Updates -> Automatic reboot.
 
-## Disable Automatic System Updates
+## Disable Automatic System Updates (not recommended)
+
+> [!NOTE]
+> If you do this you cannot even manualy check for updates via the UI.  You will have to re-enable to download OTA updates via the UI.
 
 To disable system updates entirely go to Settings -> Apps -> See All xx Apps.  In the upper right tap the three dots and select show system.  Find `System Updater`, select it, and disable it.
