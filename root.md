@@ -4,7 +4,7 @@
 > MacOS loses the ability to talk to the phone in both adb and fastboot randomly when going between the OS and fastboot.  The ONLY fix I've found is to reboot the Mac.  This has been observed on different generation M series Macbooks.
 
 > [!CAUTION]
-> All OS updates will remove root if you do not follow the section for Maintaining root when updating/OTA GrapheneOS.
+> All OS updates will remove root if you do not follow the section for Maintaining root when updating/OTA GrapheneOS.  By default GrapheneOS downnloads and installs updates but doesn't reboot.
 
 ## Assumptions
 
@@ -45,7 +45,7 @@ This will download the Magisk patched image and flash it.
 
 https://github.com/dbrowning2/grapheneos/blob/main/scripts/download_flash.sh
 
-## Maintaining root when updating/OTA GrapheneOS (untested)
+## Maintaining root when updating/OTA GrapheneOS
 
 After the update has been installed but you have not rebooted
 
@@ -65,6 +65,6 @@ You will be back to your rooted OS pre OTA update.  Perform the OTA update again
 
 Make sure automatic reboots are off in Settings -> System -> System Updates -> Automatic reboot.
 
-## Disable System Updates (optional and not recommended)
+## Disable Automatic System Updates
 
 To disable system updates entirely go to Settings -> Apps -> See All xx Apps.  In the upper right tap the three dots and select show system.  Find `System Updater`, select it, and disable it.
