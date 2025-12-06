@@ -9,7 +9,7 @@
 ## Assumptions
 
 This doc makes the following assumptions:
-  - You have a function adb environment (https://developer.android.com/tools/releases/platform-tools)
+  - You have a function adb environment (install https://developer.android.com/tools/releases/platform-tools)
   - You are running GrapheneOS based on Android 16 on a Pixel 9a
   - Developer mode and USB debugging have been enabled and adb/fastboot commands are functional
   - You are connected via USB
