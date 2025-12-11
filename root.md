@@ -50,7 +50,7 @@ https://github.com/dbrowning2/grapheneos/blob/main/scripts/download_flash.sh
 
 After the update has been installed but you have not rebooted
 
-  - In Magisk click on the `Install` button to the right of `Magisk`.
+  - In Magisk click on the `Install/Update` button to the right of `Magisk`.
   - Choose `Install to inactive slot (after OTA)`.
   - Click let's go
 
